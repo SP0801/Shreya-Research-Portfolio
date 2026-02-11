@@ -1,4 +1,4 @@
-# Pan-Cancer Profiling of LYVE1+ Perivascular Macrophages
+# Pan-Cancer Perivascular Macrophage Analysis
 
 Full project repository:
-https://github.com/SP0801/Pan-Cancer-Profiling-of-LYVE1-Perivascular-Macrophages
+https://github.com/SP0801/Pan-cancer-perivascular-macrophage-analysis
