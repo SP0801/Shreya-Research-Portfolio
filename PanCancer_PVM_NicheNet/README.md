@@ -72,10 +72,10 @@ Fibroblasts were subset based on expression of **PDGFRA** and **PDGFRB**. This c
 ![](figures/06_Per-cancer%20NicheNet%20ligand%20activity%20heatmap.png)
 
 ### 7) Conserved ligands summary across cancers
-![](figures/07_Conserved_ligands_summary.png)
+![](figures/07_Conserved%20ligands%20summary.png)
 
 ### 8) KEGG enrichment of PV-high macrophages
-![](figures/08_pathway_analysis.png)
+![](figures/08_pathway%20analysis.png)
 
 ---
 
