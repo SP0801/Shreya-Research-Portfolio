@@ -1,7 +1,7 @@
 # Perivascular-like macrophages and PDGFRA/PDGFRB fibroblast ligands across cancers (GSE210347)
 
 ## Overview
-This repository analyzes the pan-cancer scRNA-seq dataset **GSE210347** to identify a perivascular-like macrophage transcriptional program and prioritize stromal ligands that predict this program across cancers. The analysis uses **NicheNet** with **PDGFRA/PDGFRB-expressing fibroblasts** as the sender population and perivascular-high macrophages as the receiver population.
+This repository analyzes the pan-cancer scRNA-seq dataset **GSE210347** to identify a perivascular-like macrophage transcriptional program and prioritize stromal ligands that predict this program across cancers. The analysis uses **NicheNet** with **PDGFRA/PDGFRB-expressing fibroblasts** as the sender population and **perivascular-high macrophages** as the receiver population.
 
 The analysis asks:
 
@@ -27,7 +27,7 @@ A perivascular-like score was computed using a composite marker panel. Canonical
 Cells in the **top quartile** of the score were defined as **perivascular-high**. This cutoff is a pragmatic threshold and does not imply a discrete biological boundary.
 
 ### Fibroblast sender population
-Fibroblasts were subset based on expression of **PDGFRA and PDGFRB**. This choice is intended to capture major CAF compartments described in tumor single-cell studies, including PDGFRA-associated fibroblast programs and PDGFRB-associated myofibroblast/perivascular stromal programs (Öhlund et al., 2017; Elyada et al., 2019). This does not imply that all PDGFRA/PDGFRB fibroblasts are physically perivascular.
+Fibroblasts were subset based on expression of **PDGFRA** and **PDGFRB**. This choice is intended to capture major CAF compartments described in tumor single-cell studies, including PDGFRA-associated fibroblast programs and PDGFRB-associated myofibroblast/perivascular stromal programs (Öhlund et al., 2017; Elyada et al., 2019). This does not imply that all PDGFRA/PDGFRB fibroblasts are physically perivascular.
 
 ---
 
@@ -43,7 +43,7 @@ Fibroblasts were subset based on expression of **PDGFRA and PDGFRB**. This choic
 
 ---
 
-## Results summary (high-level)
+## Results summary 
 - Perivascular-high macrophages are detectable across cancer types but vary in abundance by tissue.  
 - PV-high macrophages show enrichment for lysosomal and phagocytic programs, consistent with scavenger-like macrophage states.  
 - NicheNet prioritizes a small set of fibroblast ligands across cancers, with **CSF1** and **TGFB1** repeatedly ranked among the highest.  
@@ -52,14 +52,30 @@ Fibroblasts were subset based on expression of **PDGFRA and PDGFRB**. This choic
 ---
 
 ## Figures (key outputs)
-1. Global UMAP by cell type  
-2. Myeloid embedding with CD68+ cells highlighted  
-3. Marker feature plots on macrophage embedding  
-4. Perivascular module score and PV-high gate  
-5. PV score distribution across cancers  
-6. Per-cancer NicheNet ligand activity  
-7. Conserved ligand summary across cancers  
-8. KEGG enrichment of PV-high macrophages  
+
+### 1) Global UMAP by cell type
+![](figures/01_global_umap_tissue.png)
+
+### 2) Myeloid embedding with CD68+ cells highlighted
+![](figures/02_Myeloid_CD68.png)
+
+### 3) Marker feature plots on macrophage embedding
+![](figures/03_perivascular_markers.png)
+
+### 4) Perivascular module score and PV-high gate
+![](figures/04_perivascular_score.png)
+
+### 5) PV score distribution across cancers
+![](figures/05_PV%20macrophages%20per%20cancer%20type.png)
+
+### 6) Per-cancer NicheNet ligand activity heatmap
+![](figures/06_Per-cancer%20NicheNet%20ligand%20activity%20heatmap.png)
+
+### 7) Conserved ligands summary across cancers
+![](figures/07_Conserved_ligands_summary.png)
+
+### 8) KEGG enrichment of PV-high macrophages
+![](figures/08_pathway_analysis.png)
 
 ---
 
